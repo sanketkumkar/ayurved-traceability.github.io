@@ -1,0 +1,54 @@
+{
+  "provenance": {
+    "resourceType": "ProvenanceBundle",
+    "id": "prov-batch-ashw-001",
+    "target": {
+      "type": "Product",
+      "id": "PROD-001"
+    },
+    "events": [
+      {
+        "resourceType": "CollectionEvent",
+        "id": "col-ashw-0001",
+        "species": "Withania somnifera",
+        "collectorId": "collector-123",
+        "timestamp": "2025-11-10T08:15:00+05:30",
+        "location": {
+          "lat": 22.5726,
+          "lon": 88.3639
+        },
+        "initialQuality": {
+          "moisturePercent": 8.4,
+          "visualGrade": "A"
+        }
+      },
+      {
+        "resourceType": "QualityTest",
+        "id": "qt-0001",
+        "labId": "lab-77",
+        "timestamp": "2025-11-12T14:00:00+05:30",
+        "tests": {
+          "moisturePercent": 7.9,
+          "pesticidePPM": 0.02,
+          "dnaBarcodeMatch": true
+        },
+        "certificateHash": "sha256:abcd1234"
+      },
+      {
+        "resourceType": "ProcessingStep",
+        "id": "proc-001",
+        "facilityId": "proc-9",
+        "timestamp": "2025-11-15T09:30:00+05:30",
+        "stepType": "drying",
+        "conditions": {
+          "tempC": 45,
+          "humidityPct": 25
+        },
+        "batchIdsIn": [
+          "col-ashw-0001"
+        ],
+        "batchIdOut": "batch-ashw-001"
+      }
+    ]
+  }
+}
