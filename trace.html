@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Trace a product</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+</head>
+<body class="dark">
+<header class="site-header"><div class="container"><h1>Trace a Product</h1><nav><a href="index.html">Home</a><a href="how-it-works.html">How it works</a><a href="trace.html">Trace</a><a href="admin.html">Admin</a></nav></div></header>
+<main class="container">
+  <section class="content-card">
+    <h2>Lookup by Serial / Scan QR</h2>
+    <div class="form-row">
+      <input id="serialInput" placeholder="Enter product serial (e.g., PROD-001)"/>
+      <button id="lookupBtn" class="btn">Lookup</button>
+      <button id="scanBtn" class="btn ghost">Open Camera Scanner</button>
+    </div>
+
+    <div id="scanner" class="content-card" hidden>
+      <video id="video" width="320" height="240" autoplay muted></video>
+      <canvas id="qr-canvas" hidden></canvas>
+      <button id="closeScanner" class="btn ghost">Close Scanner</button>
+    </div>
+
+    <div id="result" class="provenance-view" hidden></div>
+    <div id="map" style="height:320px;margin-top:18px;border-radius:8px;" hidden></div>
+    <div id="error" class="error" hidden></div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container">© 2025 Ayurvedic Traceability — Demo.</div></footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+<script src="script.js"></script>
+</body></html>

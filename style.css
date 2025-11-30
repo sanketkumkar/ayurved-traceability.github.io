@@ -1,0 +1,25 @@
+
+:root{--bg:#071022;--panel:#0f1724;--muted:#9aa4b2;--accent:#00d1b2;--accent2:#7c3aed}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+body.dark{background:linear-gradient(180deg,var(--bg),#04101a);color:#e6eef6;margin:0;padding:0}
+.container{max-width:1000px;margin:0 auto;padding:24px}
+.site-header{padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-header h1{display:inline;margin:0;font-size:20px}
+.site-header nav{float:right}
+.site-header nav a{color:var(--muted);margin-left:14px;text-decoration:none;font-size:14px}
+.site-header nav a:hover{color:var(--accent)}
+.hero{padding:40px 0;text-align:center}
+.lead{color:var(--muted);max-width:760px;margin:10px auto 20px}
+.cta-row{display:flex;gap:12px;justify-content:center;margin-bottom:26px}
+.btn{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:8px 12px;border-radius:8px;color:#021019;font-weight:600;border:none;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.card{background:var(--panel);padding:14px;border-radius:10px}
+.content-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:16px;border-radius:10px;margin-top:18px}
+.form-row{display:flex;gap:8px;margin-top:12px}
+input#serialInput{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:#071422;color:#e6eef6}
+.provenance-view{margin-top:12px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.event{padding:8px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.01));margin-bottom:10px}
+.small{font-size:13px;color:var(--muted)}
+.error{color:#ffb4b4;background:rgba(255,80,80,0.06);padding:10px;border-radius:8px;margin-top:12px}
+.site-footer{padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px}
