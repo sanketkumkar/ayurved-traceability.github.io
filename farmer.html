@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VedaChain - Farmer Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div>
+      <div class="brand">
+        <div class="logo">VC</div>
+        <div>
+          <h1>VedaChain</h1>
+          <p>AYURVEDIC TRACEABILITY</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html">Dashboard</a>
+        <a class="active" href="farmer.html">Farmer Collection</a>
+        <a href="processing.html">Processing Unit</a>
+        <a href="quality.html">Quality Lab</a>
+        <a href="scan.html">Consumer Scan</a>
+      </nav>
+    </div>
+
+    <div class="sidebar-bottom">
+      <span class="status-dot"></span> Network Status: Online
+      <div style="margin-top:6px;">VedaNet Mainnet v1.0</div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <main class="main">
+
+    <h2 class="page-title">🌿 New Harvest Collection</h2>
+    <p class="page-sub">Record a new botanical collection event</p>
+
+    <div class="panel" style="margin-top:20px; max-width:650px;">
+
+      <label>Batch ID</label>
+      <input type="text" value="BATCH-1501" class="input-box" />
+
+      <label style="margin-top:14px;">Species</label>
+      <select class="input-box">
+        <option>Withania somnifera (Ashwagandha)</option>
+        <option>Ocimum tenuiflorum (Tulsi)</option>
+        <option>Curcuma longa (Turmeric)</option>
+      </select>
+
+      <label style="margin-top:14px;">Quantity (kg)</label>
+      <input type="number" class="input-box" placeholder="Enter quantity" />
+
+      <label style="margin-top:14px;">GPS Location</label>
+      <button class="btn btn-primary btn-compact" id="captureGPS">
+        📍 Capture GPS
+      </button>
+      <p style="color:#d9534f;font-size:13px;margin-top:6px;">
+        Location required for Geo-Fencing validation.
+      </p>
+
+      <button class="btn btn-primary btn-commit" style="margin-top:20px;">
+        Commit to Blockchain
+      </button>
+
+    </div>
+
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
