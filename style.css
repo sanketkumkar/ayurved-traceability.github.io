@@ -24,9 +24,6 @@ input#serialInput{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(25
 .error{color:#ffb4b4;background:rgba(255,80,80,0.06);padding:10px;border-radius:8px;margin-top:12px}
 .site-footer{padding:18px 0;text-align:center;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px}
 
-/* ---------------------------
-   INPUT FIELDS
-----------------------------*/
 .input-box {
   width: 100%;
   padding: 12px;
@@ -44,44 +41,4 @@ input#serialInput{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(25
   box-shadow: 0 0 0 3px rgba(16,185,129,0.15);
 }
 
-/* ---------------------------
-   BUTTON STYLES FOR FORMS
-----------------------------*/
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-weight: 700;
-  cursor: pointer;
-  border: 0;
-  box-shadow: none;
-  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
-}
-
-.btn-primary {
-  background: linear-gradient(180deg, #2aa46b, #10b981);
-  color: #fff;
-  box-shadow: 0 8px 22px rgba(16,185,129,0.12);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(16,185,129,0.18);
-}
-
-.btn-commit {
-  width: 100%;
-  padding: 14px;
-  border-radius: 12px;
-  font-size: 15px;
-}
-
-.btn-compact {
-  padding: 10px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-}
 
